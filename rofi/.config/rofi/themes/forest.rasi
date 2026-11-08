@@ -1,0 +1,73 @@
+* {
+    bg:       #1f1a14;
+    bg-alt:   #3a2f24;
+    moss:     #8fa66a;
+    cream:    #e6dcc8;
+    muted:    #9c8f78;
+    rust:     #c8553d;
+
+    background-color: transparent;
+    text-color:       @cream;
+}
+
+window {
+    width:            45%;
+    location:         center;
+    anchor:           center;
+    background-color: @bg;
+    border:           0 0 2px 0;
+    border-color:     @moss;
+    border-radius:    0;
+    padding:          0;
+}
+
+mainbox {
+    children: [ inputbar, listview ];
+    spacing:  0;
+    padding:  0;
+}
+
+inputbar {
+    children:         [ prompt, entry ];
+    background-color: @bg;
+    padding:          6px 10px;
+    spacing:          8px;
+}
+
+prompt {
+    text-color: @moss;
+}
+
+entry {
+    placeholder:       "";
+    placeholder-color: @muted;
+}
+
+listview {
+    lines:        6;
+    columns:      1;
+    fixed-height: false;
+    scrollbar:    false;
+    spacing:      0;
+}
+
+element {
+    padding:       4px 10px;
+    spacing:       0;
+    border-radius: 0;
+}
+
+element normal.urgent {
+    text-color: @rust;
+}
+
+element selected.normal {
+    background-color: @moss;
+    text-color:       @bg;
+}
+
+element-text {
+    vertical-align:   0.5;
+    background-color: transparent;
+    text-color:       inherit;
+}

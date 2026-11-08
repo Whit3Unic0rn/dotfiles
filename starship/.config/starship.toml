@@ -1,0 +1,63 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+palette = "forest"
+
+format = """
+$directory$git_branch$git_status$python$nodejs$rust$golang$cmd_duration
+$character"""
+
+add_newline = true
+
+[palettes.forest]
+moss   = "#8fa66a"
+sage   = "#a3b18a"
+tan    = "#b08968"
+cream  = "#e6dcc8"
+leaf   = "#9c8f78"
+amber  = "#d4a24c"
+rust   = "#c8553d"
+
+[character]
+success_symbol = "[❯](bold moss)"
+error_symbol = "[❯](bold rust)"
+
+[directory]
+style = "bold moss"
+truncation_length = 3
+truncation_symbol = "…/"
+read_only = " (ro)"
+read_only_style = "rust"
+
+[git_branch]
+symbol = ""
+format = "[on ](leaf)[$symbol$branch]($style) "
+style = "tan"
+
+[git_status]
+format = '([\[$all_status$ahead_behind\]]($style) )'
+style = "amber"
+
+[cmd_duration]
+min_time = 3000
+format = "[took $duration]($style) "
+style = "leaf"
+
+[python]
+symbol = "py "
+format = '[$symbol($version )]($style)'
+style = "sage"
+
+[nodejs]
+symbol = "node "
+format = '[$symbol($version )]($style)'
+style = "sage"
+
+[rust]
+symbol = "rs "
+format = '[$symbol($version )]($style)'
+style = "sage"
+
+[golang]
+symbol = "go "
+format = '[$symbol($version )]($style)'
+style = "sage"
