@@ -1,0 +1,35 @@
+{
+  "logo": {
+    "type": "file",
+    "source": "/home/kai/.config/fastfetch/sprout.txt",
+    "color": {
+      "1": "38;2;143;166;106",
+      "2": "38;2;176;137;104"
+    },
+    "padding": { "top": 1, "left": 2, "right": 4 }
+  },
+  "display": {
+    "separator": "  ",
+    "color": {
+      "keys": "38;2;143;166;106",
+      "title": "38;2;176;137;104"
+    }
+  },
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "kernel",
+    "uptime",
+    "packages",
+    "shell",
+    "wm",
+    "terminal",
+    "cpu",
+    "gpu",
+    "memory",
+    "disk",
+    "break",
+    "colors"
+  ]
+}
